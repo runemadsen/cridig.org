@@ -94,27 +94,42 @@ blockquote:before {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-right: 15px;
 }
 
 #left ul.menu li {
   margin: 0;
   padding: 0;
-  padding: 5px 10px;
 }
 
 #left ul.menu li a {
+  display: none;
+}
+
+#left ul.sub-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 15px;
+}
+
+#left ul.sub-menu li {
+  margin: 0;
+  padding: 0;
+  padding: 5px 10px;
+}
+
+#left ul.sub-menu li a {
   font-weight: 400;
   font-size: 19px;
   color: #1d1d1d;
+  display: inline-block;
 }
 
-#left ul.menu li.active {
+#left ul.sub-menu li.current-menu-item {
   background-color: #1d1d1d;
-  color: white;
 }
 
-#left ul.menu li.active a {
+#left ul.sub-menu li.current-menu-item a {
   color: white;
 }
 

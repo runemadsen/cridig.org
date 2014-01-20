@@ -21,7 +21,8 @@
   <div class="col-md-3" id="left">
     <?php wp_nav_menu( array(
       'theme_location' => 'sub-menu',
-      'depth' => 2
+      'depth' => 2,
+      'walker'=> new Selective_Walker() 
     )); ?>
   </div>
   <div class="col-md-9" id="right">
