@@ -1,0 +1,135 @@
+body {
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Fonts
+------------------------------------------------------------- */
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: 400;
+}
+
+blockquote {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+blockquote:before {
+    display: block;
+    font-size: 40px;
+    content: open-quote;
+    height: 1px;
+    margin-left: -0.55em;
+    position:relative;
+    top:-10px;
+    color: #ababab;
+}
+
+/* Menu
+------------------------------------------------------------- */
+
+#header {
+  border-bottom: 2px solid #1d1d1d;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#header ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#header ul.menu li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+#header a#logo {
+  padding: 16px 0px;
+  display: inline-block;
+}
+
+#header ul.menu li a {
+  color: #1d1d1d;
+  display: inline-block;
+  padding: 16px 23px;
+}
+
+#header ul.menu li:first-child a {
+  padding-left: 0px;
+}
+
+#header ul.menu li:last-child a {
+  padding-right: 0px;
+}
+
+/* Main
+------------------------------------------------------------- */
+
+#main {
+  margin-top: 60px;
+}
+
+/* Left
+------------------------------------------------------------- */
+
+#left ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 15px;
+}
+
+#left ul.menu li {
+  margin: 0;
+  padding: 0;
+  padding: 5px 10px;
+}
+
+#left ul.menu li a {
+  font-weight: 400;
+  font-size: 19px;
+  color: #1d1d1d;
+}
+
+#left ul.menu li.active {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+#left ul.menu li.active a {
+  color: white;
+}
+
+/* Right
+------------------------------------------------------------- */
+
+#right {
+  padding-bottom: 30px;
+}
+
+#right p {
+  margin: 25px 20px;
+  line-height: 24px;
+}
+
+#right p:first-child {
+  margin-top: 0px;
+}
