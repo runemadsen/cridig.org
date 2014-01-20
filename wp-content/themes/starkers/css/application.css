@@ -43,10 +43,14 @@ blockquote:before {
 ------------------------------------------------------------- */
 
 #header {
-  border-bottom: 2px solid #1d1d1d;
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+#header a#logo {
+  padding: 16px 0px;
+  display: inline-block;
 }
 
 #header ul.menu {
@@ -61,11 +65,6 @@ blockquote:before {
   display: inline;
 }
 
-#header a#logo {
-  padding: 16px 0px;
-  display: inline-block;
-}
-
 #header ul.menu li a {
   color: #1d1d1d;
   display: inline-block;
@@ -78,6 +77,12 @@ blockquote:before {
 
 #header ul.menu li:last-child a {
   padding-right: 0px;
+}
+
+#header-line {
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid #1d1d1d;
 }
 
 /* Main
