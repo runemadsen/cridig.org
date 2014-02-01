@@ -27,13 +27,14 @@ h3 {
 ------------------------------------------------------------- */
 
 #header {
+  font-family: "Helvetica", "Arial", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 #header a#logo {
-  padding: 16px 0px;
+  padding: 14px 0px;
   display: inline-block;
 }
 
@@ -52,7 +53,12 @@ h3 {
 #header ul.menu li a {
   color: #1d1d1d;
   display: inline-block;
-  padding: 16px 23px;
+  padding: 14px 23px;
+}
+
+#header ul.menu li.current-menu-ancestor a,
+#header ul.menu li.current-menu-item a {
+  color: #CCCCCC;
 }
 
 #header ul.menu li:first-child a {
@@ -69,6 +75,48 @@ h3 {
   border-top: 2px solid #1d1d1d;
 }
 
+/* Sub header
+------------------------------------------------------------- */
+
+#sub-header ul.menu {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#sub-header ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+#sub-header ul.menu li a {
+  display: none;
+}
+
+#sub-header ul.sub-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid #1d1d1d;
+}
+
+#sub-header ul.sub-menu li {
+  margin: 0;
+  display: inline-block;
+  padding: 8px 15px;
+}
+
+#sub-header ul.sub-menu li a {
+  color: #1d1d1d;
+  display: inline-block;
+}
+
+#sub-header ul.sub-menu li.current-menu-item a {
+  color: #CCCCCC;
+}
+
 /* Main
 ------------------------------------------------------------- */
 
@@ -76,65 +124,19 @@ h3 {
   margin-top: 60px;
 }
 
-/* Left
+/* Content
 ------------------------------------------------------------- */
 
-#left ul.menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#left ul.menu li {
-  margin: 0;
-  padding: 0;
-}
-
-#left ul.menu li a {
-  display: none;
-}
-
-#left ul.sub-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-right: 15px;
-}
-
-#left ul.sub-menu li {
-  margin: 0;
-  padding: 0;
-  padding: 5px 10px;
-}
-
-#left ul.sub-menu li a {
-  font-weight: 400;
-  font-size: 19px;
-  color: #1d1d1d;
-  display: inline-block;
-}
-
-#left ul.sub-menu li.current-menu-item {
-  background-color: #1d1d1d;
-}
-
-#left ul.sub-menu li.current-menu-item a {
-  color: white;
-}
-
-/* Right
-------------------------------------------------------------- */
-
-#right {
+#content {
   padding-bottom: 30px;
 }
 
-#right p {
+#content p {
   margin: 25px 20px;
   line-height: 24px;
 }
 
-#right p:first-child {
+#content p:first-child {
   margin-top: 0px;
 }
 
@@ -144,7 +146,7 @@ blockquote {
   line-height: 36px;
 }
 
-#right blockquote p {
+#content blockquote p {
   margin: 0;
   padding: 0;
   line-height: 36px;
@@ -159,4 +161,26 @@ blockquote:before {
     position:relative;
     top:-10px;
     color: #ababab;
+}
+
+/* Attachments
+------------------------------------------------------------- */
+
+#attachments {
+  padding-top: 30px;
+}
+
+#attachments figure {
+  margin-bottom: 30px;
+}
+
+#attachments figcaption {
+  padding: 8px 8px;
+  margin: 0;
+  font-size: 13px;
+  color: #808080;
+}
+
+#attachments figcaption p {
+  margin: 0;
 }
