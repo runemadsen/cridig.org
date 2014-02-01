@@ -33,15 +33,11 @@ h3 {
   text-transform: uppercase;
 }
 
-#header a#logo {
-  padding: 14px 0px;
-  display: inline-block;
-}
-
 #header ul.menu {
   margin: 0;
   padding: 0;
   list-style: none;
+  border-bottom: 2px solid #1d1d1d;
 }
 
 #header ul.menu li {
@@ -53,7 +49,7 @@ h3 {
 #header ul.menu li a {
   color: #1d1d1d;
   display: inline-block;
-  padding: 14px 23px;
+  padding: 14px 10px;
 }
 
 #header ul.menu li.current-menu-ancestor a,
@@ -75,7 +71,7 @@ h3 {
   border-top: 2px solid #1d1d1d;
 }
 
-/* Sub header
+/* Sub Menu
 ------------------------------------------------------------- */
 
 #sub-header ul.menu {
@@ -96,6 +92,7 @@ h3 {
 }
 
 #sub-header ul.sub-menu {
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -105,12 +102,16 @@ h3 {
 #sub-header ul.sub-menu li {
   margin: 0;
   display: inline-block;
-  padding: 8px 15px;
 }
 
 #sub-header ul.sub-menu li a {
   color: #1d1d1d;
   display: inline-block;
+  padding: 8px 10px;
+}
+
+#sub-header ul.sub-menu li:first-child a {
+  padding-left: 0px;
 }
 
 #sub-header ul.sub-menu li.current-menu-item a {
@@ -183,4 +184,33 @@ blockquote:before {
 
 #attachments figcaption p {
   margin: 0;
+}
+
+/* Responsive
+------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+  #header ul.menu li a {
+    padding-left: 28px;
+    padding-right: 28px;
+  } 
+  #sub-header ul.sub-menu li a {
+    padding-left: 20px;
+    padding-right: 20px;
+  } 
+}
+
+@media (min-width: 1200px) {
+  #header ul.menu li a {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  #sub-header ul.sub-menu li a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }  
 }
