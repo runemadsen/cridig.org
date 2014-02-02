@@ -84,7 +84,7 @@ blockquote:before {
 #header ul.menu li a {
   color: #1d1d1d;
   display: inline-block;
-  padding: 14px 10px;
+  padding: 14px 20px;
 }
 
 #header ul.menu li.current-menu-ancestor a,
@@ -222,8 +222,8 @@ figure.front-attachment figcaption p {
 
 @media (min-width: 992px) {
   #header ul.menu li a {
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left:40px;
+    padding-right: 40px;
   } 
   #sub-header ul.sub-menu li a {
     padding-left: 20px;
@@ -233,8 +233,8 @@ figure.front-attachment figcaption p {
 
 @media (min-width: 1200px) {
   #header ul.menu li a {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   #sub-header ul.sub-menu li a {
     padding-left: 30px;
