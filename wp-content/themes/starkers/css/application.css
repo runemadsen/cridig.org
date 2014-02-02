@@ -23,6 +23,41 @@ h3 {
   font-weight: 400;
 }
 
+p {
+  margin: 25px 0px;
+  line-height: 24px;
+}
+
+p.leading {
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+blockquote {
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 36px;
+  margin: 20px;
+}
+
+blockquote p {
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+}
+
+blockquote:before {
+  display: block;
+  font-size: 40px;
+  content: open-quote;
+  height: 1px;
+  margin-left: -0.55em;
+  position:relative;
+  top:-10px;
+  color: #ababab;
+}
+
 /* Menu
 ------------------------------------------------------------- */
 
@@ -132,57 +167,45 @@ h3 {
   padding-bottom: 30px;
 }
 
-#content p {
-  margin: 25px 20px;
-  line-height: 24px;
-}
-
 #content p:first-child {
   margin-top: 0px;
-}
-
-blockquote {
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 36px;
-}
-
-#content blockquote p {
-  margin: 0;
-  padding: 0;
-  line-height: 36px;
-}
-
-blockquote:before {
-    display: block;
-    font-size: 40px;
-    content: open-quote;
-    height: 1px;
-    margin-left: -0.55em;
-    position:relative;
-    top:-10px;
-    color: #ababab;
 }
 
 /* Attachments
 ------------------------------------------------------------- */
 
-#attachments {
-  padding-top: 30px;
-}
-
-#attachments figure {
+figure.attachment {
   margin-bottom: 30px;
 }
 
-#attachments figcaption {
+figure.attachment figcaption {
   padding: 8px 8px;
   margin: 0;
   font-size: 13px;
   color: #808080;
 }
 
-#attachments figcaption p {
+figure.front-attachment {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+figure.front-attachment figcaption {
+  font-weight: 300;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 23px;
+  color: white;
+}
+
+figure.front-attachment figcaption a {
+  color: white;
+  text-decoration: none;
+}
+
+figure.attachment figcaption p,
+figure.front-attachment figcaption p {
   margin: 0;
 }
 
@@ -212,5 +235,8 @@ blockquote:before {
   #sub-header ul.sub-menu li a {
     padding-left: 30px;
     padding-right: 30px;
-  }  
+  }
+  #content {
+    padding-right: 30px;
+  }
 }
