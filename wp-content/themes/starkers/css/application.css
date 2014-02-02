@@ -171,6 +171,10 @@ blockquote:before {
   margin-top: 0px;
 }
 
+#content ul li {
+  margin-bottom: 15px;
+}
+
 /* Attachments
 ------------------------------------------------------------- */
 
