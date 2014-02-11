@@ -17,8 +17,8 @@ Template Name: Front Page
     <?php if( $attachments->exist() ) : ?>
         <?php while( $attachments->get() ) : ?>
           <figure class="front-attachment">
-            <img src="<?php echo $attachments->url(); ?>" class="img-responsive" />
             <figcaption><?php echo $attachments->field('caption'); ?></figcaption>
+            <img src="<?php echo $attachments->url(); ?>" class="img-responsive" />
           </figure>
         <?php endwhile; ?>
       </ul>
